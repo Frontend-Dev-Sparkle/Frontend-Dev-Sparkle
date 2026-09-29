@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="Prakash R, front-end engineer for React and React Native">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="55%" r="75%">
+      <stop offset="0" stop-color="#8E0B1F"/>
+      <stop offset="0.45" stop-color="#3A0716"/>
+      <stop offset="1" stop-color="#0A0E27"/>
+    </radialGradient>
+
+    <pattern id="halftone" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="7" r="2.2" fill="#F5B301"/>
+    </pattern>
+    <radialGradient id="halftoneFade" cx="50%" cy="55%" r="60%">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#fff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.9"/>
+    </radialGradient>
+    <mask id="halftoneMask"><rect width="1200" height="420" fill="url(#halftoneFade)"/></mask>
+
+    <linearGradient id="gold" x1="0" y1="140" x2="0" y2="265" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF1B8"/>
+      <stop offset="0.35" stop-color="#FFC62E"/>
+      <stop offset="0.7" stop-color="#F5A300"/>
+      <stop offset="1" stop-color="#B85F00"/>
+    </linearGradient>
+
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0; 1 0; 1 0" keyTimes="0; 0.35; 1" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .rays { transform-origin: 600px 235px; animation: spin 60s linear infinite; }
+    .title-group { transform-origin: 600px 225px; animation: slam 1.1s cubic-bezier(.2,1.6,.4,1) both; }
+    .sub { animation: rise 1s ease-out .9s both; }
+    .tag { opacity: 0; animation: cycle 16s infinite; }
+    .t2 { animation-delay: 4s; } .t3 { animation-delay: 8s; } .t4 { animation-delay: 12s; }
+    .flare { animation: pulse 4s ease-in-out infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes slam { 0% { transform: scale(2.2); opacity: 0; } 60% { opacity: 1; } 100% { transform: scale(1); opacity: 1; } }
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    @keyframes cycle { 0%, 2% { opacity: 0; } 5%, 22% { opacity: 1; } 25%, 100% { opacity: 0; } }
+    @keyframes pulse { 0%, 100% { opacity: .55; } 50% { opacity: .9; } }
+    @media (prefers-reduced-motion: reduce) {
+      .rays, .title-group, .sub, .flare { animation: none; }
+      .tag { animation: none; } .t1 { opacity: 1; }
+    }
+  </style>
+
+  <!-- backdrop -->
+  <rect width="1200" height="420" fill="url(#sky)"/>
+
+  <!-- speed rays -->
+  <g class="rays" opacity="0.12" fill="#F5B301">
+    <path d="M600 235 L560 -700 L640 -700 Z"/>
+    <path d="M600 235 L560 -700 L640 -700 Z" transform="rotate(20 600 235)"/>
+    <path d="M600 235 L560 -700 L640 -700 Z" transform="rotate(40 600 235)"/>
+    <path d="M600 235 L560 -700 L640 -700 Z" transform="rotate(60 600 235)"/>
+    <path d="M600 235 L560 -700 L640 -700 Z" transform="rotate(80 600 235)"/>
+    <path d="M600 235 L560 -700 L640 -700 Z" transform="rotate(100 600 235)"/>
+    <path d="M600 235 L560 -700 L640 -700 Z" transform="rotate(120 600 235)"/>
+    <path d="M600 235 L560 -700 L640 -700 Z" transform="rotate(140 600 235)"/>
+    <path d="M600 235 L560 -700 L640 -700 Z" transform="rotate(160 600 235)"/>
+    <path d="M600 235 L560 -700 L640 -700 Z" transform="rotate(180 600 235)"/>
+    <path d="M600 235 L560 -700 L640 -700 Z" transform="rotate(200 600 235)"/>
+    <path d="M600 235 L560 -700 L640 -700 Z" transform="rotate(220 600 235)"/>
+    <path d="M600 235 L560 -700 L640 -700 Z" transform="rotate(240 600 235)"/>
+    <path d="M600 235 L560 -700 L640 -700 Z" transform="rotate(260 600 235)"/>
+    <path d="M600 235 L560 -700 L640 -700 Z" transform="rotate(280 600 235)"/>
+    <path d="M600 235 L560 -700 L640 -700 Z" transform="rotate(300 600 235)"/>
+    <path d="M600 235 L560 -700 L640 -700 Z" transform="rotate(320 600 235)"/>
+    <path d="M600 235 L560 -700 L640 -700 Z" transform="rotate(340 600 235)"/>
+  </g>
+
+  <!-- comic halftone, strongest at the edges -->
+  <rect width="1200" height="420" fill="url(#halftone)" mask="url(#halftoneMask)" opacity="0.28"/>
+
+  <!-- central flare behind the name -->
+  <ellipse class="flare" cx="600" cy="225" rx="360" ry="70" fill="#FF3B3B" opacity="0.6" filter="url(#glow)"/>
+
+  <!-- comic caption box -->
+  <g transform="translate(40 34) rotate(-2)">
+    <rect x="4" y="4" width="420" height="46" fill="#000" opacity="0.6"/>
+    <rect width="420" height="46" fill="#FFF4D6" stroke="#1B1B2F" stroke-width="3"/>
+    <text x="210" y="29" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Trebuchet MS',sans-serif" font-size="17" font-weight="700" fill="#1B1B2F" textLength="380" lengthAdjust="spacingAndGlyphs">The origin story of a front-end engineer</text>
+  </g>
+
+  <!-- the name -->
+  <g class="title-group">
+    <text x="600" y="262" text-anchor="middle" font-family="Impact,'Anton','Arial Black','Helvetica Neue',sans-serif" font-size="150" font-weight="900" textLength="960" lengthAdjust="spacingAndGlyphs" fill="#1B1B2F" transform="translate(7 8)">PRAKASH R</text>
+    <text x="600" y="262" text-anchor="middle" font-family="Impact,'Anton','Arial Black','Helvetica Neue',sans-serif" font-size="150" font-weight="900" textLength="960" lengthAdjust="spacingAndGlyphs" fill="url(#gold)" stroke="#5A0A12" stroke-width="4" paint-order="stroke">PRAKASH R</text>
+    <text x="600" y="262" text-anchor="middle" font-family="Impact,'Anton','Arial Black','Helvetica Neue',sans-serif" font-size="150" font-weight="900" textLength="960" lengthAdjust="spacingAndGlyphs" fill="url(#shine)">PRAKASH R</text>
+  </g>
+
+  <!-- subtitle -->
+  <g class="sub">
+    <rect x="330" y="292" width="540" height="40" fill="#C8102E" stroke="#1B1B2F" stroke-width="3" transform="skewX(-12) translate(62 0)"/>
+    <text x="600" y="320" text-anchor="middle" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="900" fill="#FFF4D6" textLength="500" lengthAdjust="spacingAndGlyphs">Front-end engineer for React and React Native</text>
+  </g>
+
+  <!-- rotating taglines -->
+  <g font-family="'Trebuchet MS','Segoe UI',Arial,sans-serif" font-size="22" font-weight="700" fill="#FFE9A8" text-anchor="middle">
+    <text class="tag t1" x="600" y="378" opacity="1">Builds offline-first mobile apps that never lose a signal</text>
+    <text class="tag t2" x="600" y="378">Ships real-time interfaces with SSE and GraphQL</text>
+    <text class="tag t3" x="600" y="378">Turns AI into features people actually use</text>
+    <text class="tag t4" x="600" y="378">5+ years and 10+ products shipped</text>
+  </g>
+
+  <!-- panel border -->
+  <rect x="6" y="6" width="1188" height="408" fill="none" stroke="#F5B301" stroke-width="4"/>
+  <rect x="14" y="14" width="1172" height="392" fill="none" stroke="#1B1B2F" stroke-width="2" opacity="0.8"/>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 526" width="960" height="526" role="img" aria-label="Skill power levels">
+<defs>
+<pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="1.4" fill="#F5B301"/></pattern>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B1B2F"/><stop offset="1" stop-color="#0A0E27"/></linearGradient>
+</defs>
+<style>
+.bar { transform-box: fill-box; transform-origin: left center; animation: charge 1.6s cubic-bezier(.2,.8,.2,1) both; }
+@keyframes charge { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (prefers-reduced-motion: reduce) { .bar { animation: none; } }
+text { font-family: 'Trebuchet MS','Segoe UI',Arial,sans-serif; }
+</style>
+<rect x="4" y="4" width="952" height="518" fill="url(#bg)" stroke="#F5B301" stroke-width="4"/>
+<rect x="4" y="4" width="952" height="518" fill="url(#dots)" opacity="0.07"/>
+<g transform="translate(30 26) rotate(-1.5)">
+<rect x="4" y="4" width="300" height="42" fill="#000" opacity="0.6"/>
+<rect width="300" height="42" fill="#C8102E" stroke="#FFF4D6" stroke-width="3"/>
+<text x="150" y="29" text-anchor="middle" font-family="Impact,'Arial Black',sans-serif" font-size="24" fill="#FFF4D6" textLength="250" lengthAdjust="spacingAndGlyphs" style="font-family:Impact,'Arial Black',sans-serif">Superpower levels</text>
+</g>
+<text x="40" y="112" font-size="18" font-weight="700" fill="#FFF4D6">React.js</text>
+<rect x="340" y="96" width="470" height="22" fill="#2A2A45" stroke="#000" stroke-width="2"/>
+<rect class="bar" style="animation-delay:0.20s" x="340" y="96" width="446" height="22" fill="#61DAFB"/>
+<rect x="340" y="96" width="446" height="8" fill="#fff" opacity="0.25"/>
+<text x="824" y="113" font-size="15" font-weight="700" fill="#F5B301">95%</text>
+<text x="40" y="156" font-size="18" font-weight="700" fill="#FFF4D6">React Native</text>
+<rect x="340" y="140" width="470" height="22" fill="#2A2A45" stroke="#000" stroke-width="2"/>
+<rect class="bar" style="animation-delay:0.32s" x="340" y="140" width="423" height="22" fill="#61DAFB"/>
+<rect x="340" y="140" width="423" height="8" fill="#fff" opacity="0.25"/>
+<text x="824" y="157" font-size="15" font-weight="700" fill="#F5B301">90%</text>
+<text x="40" y="200" font-size="18" font-weight="700" fill="#FFF4D6">JavaScript (ES6+)</text>
+<rect x="340" y="184" width="470" height="22" fill="#2A2A45" stroke="#000" stroke-width="2"/>
+<rect class="bar" style="animation-delay:0.44s" x="340" y="184" width="423" height="22" fill="#F7DF1E"/>
+<rect x="340" y="184" width="423" height="8" fill="#fff" opacity="0.25"/>
+<text x="824" y="201" font-size="15" font-weight="700" fill="#F5B301">90%</text>
+<text x="40" y="244" font-size="18" font-weight="700" fill="#FFF4D6">CSS, Tailwind, NativeWind</text>
+<rect x="340" y="228" width="470" height="22" fill="#2A2A45" stroke="#000" stroke-width="2"/>
+<rect class="bar" style="animation-delay:0.56s" x="340" y="228" width="423" height="22" fill="#38BDF8"/>
+<rect x="340" y="228" width="423" height="8" fill="#fff" opacity="0.25"/>
+<text x="824" y="245" font-size="15" font-weight="700" fill="#F5B301">90%</text>
+<text x="40" y="288" font-size="18" font-weight="700" fill="#FFF4D6">Redux</text>
+<rect x="340" y="272" width="470" height="22" fill="#2A2A45" stroke="#000" stroke-width="2"/>
+<rect class="bar" style="animation-delay:0.68s" x="340" y="272" width="376" height="22" fill="#A78BFA"/>
+<rect x="340" y="272" width="376" height="8" fill="#fff" opacity="0.25"/>
+<text x="824" y="289" font-size="15" font-weight="700" fill="#F5B301">80%</text>
+<text x="40" y="332" font-size="18" font-weight="700" fill="#FFF4D6">GraphQL</text>
+<rect x="340" y="316" width="470" height="22" fill="#2A2A45" stroke="#000" stroke-width="2"/>
+<rect class="bar" style="animation-delay:0.80s" x="340" y="316" width="352" height="22" fill="#E535AB"/>
+<rect x="340" y="316" width="352" height="8" fill="#fff" opacity="0.25"/>
+<text x="824" y="333" font-size="15" font-weight="700" fill="#F5B301">75%</text>
+<text x="40" y="376" font-size="18" font-weight="700" fill="#FFF4D6">Firebase</text>
+<rect x="340" y="360" width="470" height="22" fill="#2A2A45" stroke="#000" stroke-width="2"/>
+<rect class="bar" style="animation-delay:0.92s" x="340" y="360" width="352" height="22" fill="#FFCA28"/>
+<rect x="340" y="360" width="352" height="8" fill="#fff" opacity="0.25"/>
+<text x="824" y="377" font-size="15" font-weight="700" fill="#F5B301">75%</text>
+<text x="40" y="420" font-size="18" font-weight="700" fill="#FFF4D6">Offline-first sync</text>
+<rect x="340" y="404" width="470" height="22" fill="#2A2A45" stroke="#000" stroke-width="2"/>
+<rect class="bar" style="animation-delay:1.04s" x="340" y="404" width="329" height="22" fill="#FF6B6B"/>
+<rect x="340" y="404" width="329" height="8" fill="#fff" opacity="0.25"/>
+<text x="824" y="421" font-size="15" font-weight="700" fill="#F5B301">70%</text>
+<text x="40" y="464" font-size="18" font-weight="700" fill="#FFF4D6">Python</text>
+<rect x="340" y="448" width="470" height="22" fill="#2A2A45" stroke="#000" stroke-width="2"/>
+<rect class="bar" style="animation-delay:1.16s" x="340" y="448" width="164" height="22" fill="#9CA3AF"/>
+<rect x="340" y="448" width="164" height="8" fill="#fff" opacity="0.25"/>
+<text x="824" y="465" font-size="15" font-weight="700" fill="#F5B301">In training</text>
+</svg>
