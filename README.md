@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/hero-banner.svg" alt="Prakash R, front-end engineer for React and React Native" width="100%"/>
+  <img src="./hero-banner.svg" alt="Prakash R, front-end engineer for React and React Native" width="100%"/>
 </p>
 
 <p align="center">
@@ -38,7 +38,7 @@ A guard and security intelligence platform at **Multiplied AI**. I'm building th
 </p>
 
 <p align="center">
-  <img src="./assets/power-levels.svg" alt="Skill levels: React 95%, React Native 90%, JavaScript 90%, CSS and Tailwind 90%, Redux 80%, GraphQL 75%, Firebase 75%, offline-first sync 70%, Python in training" width="85%"/>
+  <img src="./power-levels.svg" alt="Skill levels: React 95%, React Native 90%, JavaScript 90%, CSS and Tailwind 90%, Redux 80%, GraphQL 75%, Firebase 75%, offline-first sync 70%, Python in training" width="85%"/>
 </p>
 
 ## 💥 Missions completed
@@ -99,5 +99,5 @@ NOW    Building AI-powered, offline-first mobile products
 <p align="center">🎨 <b>State-level 5th position, Painter Tilak Award (Art)</b></p>
 
 <p align="center">
-  <img src="./assets/footer.svg" alt="To be continued. Next mission: growing into full-stack, AI-focused products" width="100%"/>
+  <img src="./footer.svg" alt="To be continued. Next mission: growing into full-stack, AI-focused products" width="100%"/>
 </p>
